@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <script src="js/aframe.min.js"></script>   
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <img id="cielo1" src="assets/fondo1.jpg">
+        <img id="cielo2" src="assets/fondo2.jpg">
+        <img id="cielo3" src="assets/fondo3.jpg">
+      </a-assets>
+      <a-image src="#cielo1" position="-2 1.8 -3" width="1.5" height="0.75" onclick="show('cielo1')"></a-image> 
+      <a-image src="#cielo2" position="0 1.8 -3" width="1.5" height="0.75" onclick="show('cielo2')"></a-image>
+      <a-image src="#cielo3" position= "2 1.8 -3" width="1.5" height="0.75" onclick="show('cielo3')"></a-image>
+      <a-sky id="lugar" src="#cielo1"></a-sky>
+      <a-camera>
+        <a-cursor fuse="true"></a-cursor>
+      </a-camera>
+    </a-scene>
+    <script type="text/javascript" src="js/proyecto1.js"></script>
+  </body>
+</html>
+<!-- Instalar pra realizar diploy
+
+npm install -g now 
+Realizar deploy: now-->
